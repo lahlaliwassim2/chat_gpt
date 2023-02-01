@@ -6,7 +6,7 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <div className='bg-[#1A232E] h-screen py-8 px-4 sm:px-28 relative text-white  overflow-hidden flex flex-col justify-between align-middle'>
+    <div className='bg-[#1A232E] h-screen py-8  sm:px-28 relative text-white  overflow-hidden flex px-10 flex-col justify-between align-middle'>
       {/* header  */}
       <div className="gradient-01 z-0 absolute"></div>
       <div className="gradient-02 z-0 absolute"></div>
@@ -18,7 +18,7 @@ function App() {
       </div>
 
        {/* input  */}
-       <div className="input">
+       <div className="w-full max-w-4xl min-w-[20rem] self-center">
         <ChatInput />
        </div>
     </div>
