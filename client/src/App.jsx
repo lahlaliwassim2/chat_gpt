@@ -13,7 +13,7 @@ function App() {
       <div className="uppercase font-bold text-2xl text-center mb-3">Chater m3a Gpt</div>
 
        {/* body  */}
-      <div className="body">
+      <div className="h-[90%] overflow-auto w-full max-w-4xl min-w-[20rem] py-8 self-center">
         <ChatBody />
       </div>
 
