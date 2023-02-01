@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import ChatBody from './components/ChatBody'
+import ChatInput from './components/ChatInput'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -17,7 +18,9 @@ function App() {
       </div>
 
        {/* input  */}
-       <div className="input">input</div>
+       <div className="input">
+        <ChatInput />
+       </div>
     </div>
   )
 }
