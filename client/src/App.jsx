@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import './App.css'
+import ChatBody from './components/ChatBody'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -12,7 +13,9 @@ function App() {
       <div className="uppercase font-bold text-2xl text-center mb-3">Chater m3a Gpt</div>
 
        {/* body  */}
-      <div className="body">header</div>
+      <div className="body">
+        <ChatBody />
+      </div>
 
        {/* input  */}
        <div className="input">input</div>
