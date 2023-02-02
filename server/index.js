@@ -17,8 +17,9 @@ const configuration = new Configuration({
 
 const openai = new OpenAIApi(configuration)
 
-app.listen("3080", ()=>{
-    console.log("port 3080")
+const PORT = process.env.PORT
+app.listen(PORT, ()=>{
+    console.log(`project run in port : ${PORT}`)
 })
 
 app.get("/",  (req,res)=>{
@@ -33,6 +34,9 @@ app.post('/', async(req,res)=>{
             prompt : `${message}`,
             max_tokens: 100,
             temperature: .5
+        })
+        res.json({
+            message : response.data.choices[0].value
         })
     } catch (error) {
         console.log(error)
