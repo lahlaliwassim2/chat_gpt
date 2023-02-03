@@ -15,14 +15,17 @@ const ChatInput = ({ sendMessage, loading }) => {
     py-4 overflow-auto relative"
     >
       {loading ? (
-        <img  src="./loader.gif" className="w-full m-auto " />
+        <img  src="./load.gif" className="w-20 h-full m-auto " />
+
       ) : (
         <>
           <textarea
             onKeyDown={(e) => {
               e.keyCode === 13 && e.shiftKey === false && handleSubmit();
             }}
+            placeholder="N'hésitez pas à me questionné"
             rows={1}
+            placeholderStyle={{float:  'end'}}
             className="border-0 bg-transparent outline-none w-11/12"
             value={value}
             type="text"

@@ -21,6 +21,10 @@ const ChatBody = ({ chat , loading}) => {
     }, [chat])
 
   return (
+    <>
+   {(loading) && (<img  src="./loader.gif" className="w-100 m-auto " />)
+     
+   }
     <div className="flex flex-col gap-4" ref={parent}>
       {chat.map((message, i) => {
         return (
@@ -39,6 +43,7 @@ const ChatBody = ({ chat , loading}) => {
 
       <div ref={bottomRef} className="h-3"></div>
     </div>
+     </>
   );
 };
 
