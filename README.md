@@ -1,10 +1,10 @@
 # chat_gpt
 
 ## Run back-end : 
-  npm run start
+      npm run start
 
 ## Run Front-end :
-  npm run dev
+      npm run dev
 
 
 lien OpenAi : 
