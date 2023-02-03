@@ -15,7 +15,7 @@ const ChatInput = ({ sendMessage, loading }) => {
     py-4 overflow-auto relative"
     >
       {loading ? (
-        <img src="./loader.gif" className="w-8 m-auto" />
+        <img  src="./loader.gif" className="w-full m-auto " />
       ) : (
         <>
           <textarea

@@ -3,7 +3,7 @@ import autoAnimate from "@formkit/auto-animate";
 import { useEffect } from "react";
 
 
-const ChatBody = ({ chat }) => {
+const ChatBody = ({ chat , loading}) => {
   const aiStyle =
     "bg-white bg-opacity-40 backdrop-blur-lg dropshadow-md mr-auto";
 

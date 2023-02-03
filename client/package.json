@@ -1,5 +1,5 @@
 {
-  "name": "chatgpy2.0",
+  "name": "chatgpt2-0-youtube",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -11,7 +11,8 @@
   "dependencies": {
     "@formkit/auto-animate": "^1.0.0-beta.6",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-query": "^3.39.3"
   },
   "devDependencies": {
     "@types/react": "^18.0.26",
@@ -19,6 +20,7 @@
     "@vitejs/plugin-react": "^3.0.0",
     "autoprefixer": "^10.4.13",
     "postcss": "^8.4.21",
+    "tailwind-scrollbar": "^2.1.0",
     "tailwindcss": "^3.2.4",
     "vite": "^4.0.0"
   }
